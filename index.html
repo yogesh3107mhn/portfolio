@@ -1543,7 +1543,7 @@
 
             // ─────────────── EMAILJS CONTACT FORM ───────────────
             (function() {
-                emailjs.init("YOUR_PUBLIC_KEY"); // ⚠️ Replace with your EmailJS public key
+                emailjs.init("2H64JFNTYkwQkq-2p"); // ⚠️ Replace with your EmailJS public key
             })();
 
             const contactForm = document.getElementById('contactForm');
@@ -1564,7 +1564,7 @@
                     message: document.getElementById('message').value,
                 };
 
-                emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+                emailjs.send('service_nrdeyok', 'template_p16eymg', templateParams)
                     .then(function(response) {
                         formStatus.innerHTML = '<span class="success">✓ Thank you! Our team will contact you soon.</span>';
                         contactForm.reset();
